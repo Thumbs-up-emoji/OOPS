@@ -1,3 +1,4 @@
+//This lab was to create one dict.c file, use it as a header for another main.c, also implemented bubble sort
 #include<stdio.h>
 #include<malloc.h>
 #include<stdlib.h>

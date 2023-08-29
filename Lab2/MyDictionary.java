@@ -1,3 +1,4 @@
+import java.util.Scanner;
 class MyDictionary {
   // Main Driver Method (optional in our modular design)
   public static void main(String args[]) {
@@ -15,7 +16,7 @@ class MyDictionary {
   }
   public void Insert(int elem) {
     if(size>count) {
-      arr[++count]=elem;
+      arr[count++]=elem; //changed ++count to count++ so now it runs properly
     }
     else System.out.println("Size" + size + " not enough for holding an extra element after " + count + " count");
   }
@@ -28,5 +29,19 @@ class MyDictionary {
       System.out.print(" .");
     }
     System.out.println("");
+  }
+  private int[] arr1;
+  public void Delete(int elem) { //tried creating delete function, idk how java works
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("Enter index");
+    int index=scanner.nextInt();
+    int ind=0;
+    scanner.close();
+    for(int i=0;i<count;i++)
+    {
+      if(i==index) continue;
+      arr[i]=arr1[ind];
+      ind++;
+    }
   }
 }

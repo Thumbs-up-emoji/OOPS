@@ -26,7 +26,7 @@ public class TestDictionary {
 				// Double f=Double.valueOf(size*Math.random());
 			Long l=Long.valueOf(Math.round(f.doubleValue()));
 				// Both taken as non-primitive types, so that they fit into the Object hierarchy
-			Record rec = new Record(l,f);
+			Record rec = Math.random()<=0.5?new Record(l,f):new Record(f,l);
 			dictionary.put(rec);
 		}
 		System.out.print(dictionary);

@@ -1,4 +1,0 @@
-
-public enum Comparison {
-	PREDECESSOR, MATCHING, SUCCESSOR, INCOMPARABLE
-}
